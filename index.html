@@ -1,68 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <style>
-        h1 {
-            color: rgb(253, 49, 172);
-            text-align: center;
-        }
-
-        h2 {
-            color: rgb(217, 134, 255);
-            font-size: 23px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        img {
-            mix-blend-mode: multiply;
-            float: left;
-            position: absolute;
-            width: 200px;
-            height: auto;
-        }
-
-        body {
-            background-color: rgb(239, 123, 221);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            background-image: url("https://static.vecteezy.com/system/resources/previews/007/164/611/non_2x/various-gummy-and-jelly-bears-colorful-fruity-and-tasty-sweets-and-candies-seamless-pattern-cartoon-style-seamless-pattern-background-wallpaper-illustration-for-printing-vector.jpg");
-
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+        body {
+            background-image: url("https://static.vecteezy.com/system/resources/previews/007/164/611/non_2x/various-gummy-and-jelly-bears-colorful-fruity-and-tasty-sweets-and-candies-seamless-pattern-cartoon-style-seamless-pattern-background-wallpaper-illustration-for-printing-vector.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            color: #fff; 
+            font-family: Arial, sans-serif;
+        }
+
+        .barras {
+            display: none;
+        }
+
+        .desplegable {
+            background: #1e1e1e;
+            opacity: 0.9; 
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px;
+            list-style: none;
+        }
+
+        ul li a {
+            color: cyan;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.1rem;
+            display: block;
+            padding: 10px;
+        }
+
+        nav ul li:hover {
+            background: #f57722;
+       @media (max-width: 850px) {
+    .desplegable {
+        background: none;
+        transform: translate(-100%);
+        transition: 0.5s;
+        font-size: 1.2rem; 
+        width: 100%; 
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%; 
+    }
+
+            .desplegable {
+                background: none;
+                transform: translate(-100%);
+                transition: 0.5s;
+                font-size: 1.5rem;
+                width: 50%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                justify-content: center;
+            }
+
+            a {
+                padding: 20px;
+                font-size: 1.5rem;
+                text-align: left;
+            }
+
+            .boton_menu {
+                background-image: url('./icono_menu.png');
+                background-color: #1e1e1e;
+                background-repeat: no-repeat;
+                height: 30px;
+                width: 30px;
+                background-size: 30px 30px;
+                background-position: center;
+                border: none;
+                margin: 10px 10px 10px 20px;
+            }
+
+            button {
+                margin: 5px;
+            }
+
+    
+            .abrir_menu {
+                background: rgba(30, 30, 30, 0.6);
+                backdrop-filter: blur(2px);
+                transform: translate(0%);
+                width: 50%;
+                transition: 0.5s;
+            }
+
+            .colocar_x {
+                background-image: url('./icono_x.png');
+                background-color: #1e1e1e;
+                background-repeat: no-repeat;
+                height: 30px;
+                width: 30px;
+                background-size: 30px 30px;
+                background-position: center;
+            }
+       }
+
+@media (max-width: 500px) {
+    .desplegable {
+        width: 100%;
+        height: 100vh;
+        font-size: 1.5rem;
+            .barras {
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <img src="GOMITAS.jpeg"/><br>
-        <br>
-        <br>
-        <b><center><h1>Gomitas</h1></center></b>
-        <h2><center>Guatemala</center></h2>
-        <hr color="PINKHOT" size="12" noshade="2">
-    </header>
-    <main>
-        <p>
-            <h1 style="color: rgb(248, 125, 231); font-size:12px"><br>5to Bach</h1><br>
-            <center>Origenes</center><br>
-            <center>Empresa Guatemalteca</center><br>
-            <center>Fundada por Emily</center><br>
-            <center>Ciudad de Guatemala</center><br>
-            <center>Primer Restaurante Bárcena Guatemala</center><br>
-        </p>
-    </main>
-    <hr color="PURPUL" size="12" noshade="3">
-    <b><center><h1>Emily Cruz</h1></center></b>
-    <footer>
-        <center>Cendel</center><br>
-        <center>9va avenida 6-66</center><br>
-        <center>Gomitas.com</center><br>
-    </footer>
+<header>
+    <center>
+        <img src="GOMITAS.jpeg" width="300" height="180" alt="Logo">
+    </center>
+    <div class="barras">
+        <button onclick="abrir_cerrar_menu()" class="boton_menu" id="x"></button>
+    </div>
+    <nav id="menu" class="desplegable">
+        <ul>
+            <li><a href="ace.html">Inicio</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="ordenar.html">Ordenar</a></li>
+            <li><a href="contac.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+</header>
+<script src="main.js"></script>
 </body>
 </html>
