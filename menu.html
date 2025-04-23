@@ -8,72 +8,136 @@
       font-family: Arial, sans-serif;
       padding: 20px;
       background-color: #080707;
-      color: #000;
-         background-image: url("https://static.vecteezy.com/system/resources/previews/007/164/611/non_2x/various-gummy-and-jelly-bears-colorful-fruity-and-tasty-sweets-and-candies-seamless-pattern-cartoon-style-seamless-pattern-background-wallpaper-illustration-for-printing-vector.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 100vh;
-            color: #080707; 
-            font-family: Arial, sans-serif;
+      background-image: url("https://static.vecteezy.com/system/resources/previews/007/164/611/non_2x/various-gummy-and-jelly-bears-colorful-fruity-and-tasty-sweets-and-candies-seamless-pattern-cartoon-style-seamless-pattern-background-wallpaper-illustration-for-printing-vector.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      color: #080707;
     }
+
+    header {
+      text-align: center;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10px 0;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #f7439e;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff9cf8;
+    }
+
     h1 {
       text-align: center;
       font-size: 36px;
       color: #f7409d;
     }
-  
-    p {
-      font-size: 18px;
-      margin: 4px 0;
-    }
-     h2 {
+
+    h2 {
       text-align: center;
       font-size: 28px;
       color: #f7439e;
     }
-   h3 {
+
+    h3 {
       font-size: 18px;
       margin: 4px 0;
       color: #f567af;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 4px 0;
+    }
+
+    a {
+      color: #f7439e;
+    }
+
+    @media (max-width: 850px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Menú Pollo Campero</h1>
+  <header>
+    <h1>Menú Gomitas</h1>
+  </header>
 
-  <h2>Gomitas sin Glaseado de azucar </h2>
+  <nav>
+    <ul>
+      <li><a href="ace.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="ordenar.html">Ordenar</a></li>
+      <li><a href="contac.html">Contáctanos</a></li>
+    </ul>
+  </nav>
+
+  <h2>Gomitas sin Glaseado de azúcar</h2>
   <h3>Una Libra</h3>
   <p>Tiburones - Q20.00</p>
-  <p>Lombrices -  Q20.00</p>
+  <p>Lombrices - Q20.00</p>
   <p>Corazones - Q20.00</p>
+
   <h3>Media Libra</h3>
   <p>Tiburones - Q10.00</p>
-  <p>Lombrices -  Q10.00</p>
+  <p>Lombrices - Q10.00</p>
   <p>Corazones - Q10.00</p>
 
-  <h2>Gomitas con Glaseado de azucar</h2>
-   <h3>Una Libra</h3>
-  <p> Frutitas- Q20.00</p>
-  <p> Fresitas-Q20.00</p>
-  <p> Aros de sandia-Q20.00</p>
-  <p> Aros de manzana-Q20.00</p>
-  <p> Aros de Durazno-Q20.00</p>
-   <h3>Media Libra</h3>
-  <p>Frutitas- Q10.00</p>
-  <p>Fresitas-Q10.00</p>
-  <p>Aros de sandia-Q10.00</p>
-  <p>Aros de manzana-Q10.00</p>
-  <p>Aros de Durazno-Q10.00</p>
+  <h2>Gomitas con Glaseado de azúcar</h2>
+  <h3>Una Libra</h3>
+  <p>Frutitas - Q20.00</p>
+  <p>Fresitas - Q20.00</p>
+  <p>Aros de sandía - Q20.00</p>
+  <p>Aros de manzana - Q20.00</p>
+  <p>Aros de durazno - Q20.00</p>
+
+  <h3>Media Libra</h3>
+  <p>Frutitas - Q10.00</p>
+  <p>Fresitas - Q10.00</p>
+  <p>Aros de sandía - Q10.00</p>
+  <p>Aros de manzana - Q10.00</p>
+  <p>Aros de durazno - Q10.00</p>
 
   <h2>Gomitas enchiladas</h2>
-  <p>1lb mix de gomitas - Q30.00</p>
-  <p>1/2lb mix de gomitas - Q15.00</p>
+  <p>1 lb mix de gomitas - Q30.00</p>
+  <p>1/2 lb mix de gomitas - Q15.00</p>
 
-
-
+  <br>
   <a href="index.html">Regresar a la Página Principal</a>
 
 </body>
 </html>
+
