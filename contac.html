@@ -9,41 +9,98 @@
       font-family: Arial, sans-serif;
       background-color: #000000;
       padding: 20px;
-         background-image: url("https://static.vecteezy.com/system/resources/previews/007/164/611/non_2x/various-gummy-and-jelly-bears-colorful-fruity-and-tasty-sweets-and-candies-seamless-pattern-cartoon-style-seamless-pattern-background-wallpaper-illustration-for-printing-vector.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 100vh;
-            color: #000000;
- 
-            font-family: Arial, sans-serif;
+      background-image: url("https://static.vecteezy.com/system/resources/previews/007/164/611/non_2x/various-gummy-and-jelly-bears-colorful-fruity-and-tasty-sweets-and-candies-seamless-pattern-cartoon-style-seamless-pattern-background-wallpaper-illustration-for-printing-vector.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      color: #000000;
     }
+
+    header {
+      text-align: center;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10px 0;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #f7439e;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff9cf8;
+    }
+
     h1 {
       text-align: center;
       color: #fa84ea;
     }
+
     h2 {
       color: #fa84ea;
     }
+
     p {
       font-size: 18px;
     }
+
     a {
       color: #fa84ea;
       text-decoration: none;
       font-weight: bold;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .contact-info {
       margin-top: 20px;
+    }
+
+    @media (max-width: 850px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Contacto gomitas Emi</h1>
+  <header>
+    <h1>Contacto Gomitas Emi</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="ace.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="ordenar.html">Ordenar</a></li>
+      <li><a href="contac.html">Contáctanos</a></li>
+    </ul>
+  </nav>
 
   <div class="contact-info">
     <h2>Teléfonos</h2>
@@ -54,11 +111,14 @@
     <p>emilycordon7@gmail.co</p>
 
     <h2>WhatsApp</h2>
- <p>23741777</p>
+    <p>23741777</p>
+
     <h2>Dirección de oficinas centrales</h2>
-    <p><strong>Dirección:</strong> 8va avenida 6-66 zona 3 de barcen villa nueva</p>
+    <p><strong>Dirección:</strong> 8va avenida 6-66 zona 3 de Bárcena, Villa Nueva</p>
   </div>
 
+  <br>
   <a href="index.html">Regresar a la Página Principal</a>
+
 </body>
 </html>
