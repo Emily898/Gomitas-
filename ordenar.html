@@ -8,24 +8,61 @@
       font-family: Arial, sans-serif;
       padding: 20px;
       background-color: #000000;
-         background-image: url("https://static.vecteezy.com/system/resources/previews/007/164/611/non_2x/various-gummy-and-jelly-bears-colorful-fruity-and-tasty-sweets-and-candies-seamless-pattern-cartoon-style-seamless-pattern-background-wallpaper-illustration-for-printing-vector.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 100vh;
-            color: #000000; 
-            font-family: Arial, sans-serif;
+      background-image: url("https://static.vecteezy.com/system/resources/previews/007/164/611/non_2x/various-gummy-and-jelly-bears-colorful-fruity-and-tasty-sweets-and-candies-seamless-pattern-cartoon-style-seamless-pattern-background-wallpaper-illustration-for-printing-vector.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      color: #000000;
     }
+
+    header {
+      text-align: center;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10px 0;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #f7439e;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff9cf8;
+    }
+
     h1 {
       text-align: center;
       font-size: 36px;
       color: #f590e6;
     }
+
     h2 {
       font-size: 24px;
       color: #f50cb7;
       margin-top: 30px;
     }
+
     label {
       font-size: 18px;
       display: block;
@@ -33,61 +70,82 @@
       font-weight: bold;
     }
 
+    form {
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    }
+
     input[type="submit"]:hover {
       background-color: #ff8cff;
+    }
+
+    a {
+      color: #f7439e;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
-    form {
-      border: none;
-      box-shadow: none;
-      padding: 0;
+    @media (max-width: 850px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Menú Pollo Campero</h1>
+  <header>
+    <h1>Menú Pollo Campero</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="ace.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="ordenar.html">Ordenar</a></li>
+      <li><a href="contac.html">Contáctanos</a></li>
+    </ul>
+  </nav>
 
   <form action="#" method="post">
     
     <h2>Gomitas (Libra)</h2>
-    <label><name="orden" value=" "> Tiburones - Q20.00 </label>
-    <label><name="orden" value=""> Lombrices -  Q20.00 </label>
-    <label><name="orden" value="">Corazones - Q20.00  </label>
-    <label><name="orden" value=" ">Frutitas- Q20.00  </label>
-    <label><name="orden" value="">Fresitas-Q20.00  </label>
-    <label><name="orden" value=""> Aros de sandia-Q20.00</label>
-    <label><name="orden" value=""> Aros de manzana-Q20.00  </label>
-    <label><name="orden" value=""> Aros de durazno-Q20.00</label>
+    <label>Tiburones - Q20.00</label>
+    <label>Lombrices - Q20.00</label>
+    <label>Corazones - Q20.00</label>
+    <label>Frutitas - Q20.00</label>
+    <label>Fresitas - Q20.00</label>
+    <label>Aros de sandía - Q20.00</label>
+    <label>Aros de manzana - Q20.00</label>
+    <label>Aros de durazno - Q20.00</label>
+
     <h2>Gomitas (Media)</h2>
-    <label><name="orden" value=" "> Tiburones - Q10.00 </label>
-    <label><name="orden" value=""> Lombrices -  Q10.00 </label>
-    <label><name="orden" value="">Corazones - Q10.00  </label>
-    <label><name="orden" value=" ">Frutitas- Q10.00  </label>
-    <label><name="orden" value="">Fresitas-Q10.00  </label>
-    <label><name="orden" value=""> Aros de sandia-Q10.00</label>
-    <label><name="orden" value=""> Aros de manzana-Q10.00  </label>
-    <label><name="orden" value=""> Aros de durazno-Q10.00</label>
-    
-    
+    <label>Tiburones - Q10.00</label>
+    <label>Lombrices - Q10.00</label>
+    <label>Corazones - Q10.00</label>
+    <label>Frutitas - Q10.00</label>
+    <label>Fresitas - Q10.00</label>
+    <label>Aros de sandía - Q10.00</label>
+    <label>Aros de manzana - Q10.00</label>
+    <label>Aros de durazno - Q10.00</label>
+
     <h2>Combos</h2>
-    <label><name="orden" value="combo1"> Combo 1:2 Libras de mix gomitas + 1 Libra de gomitas enchiladas - Q30.00</label>
-    <label><name="orden" value="combo2"> Combo 2:1 Libra de gomitas(a su elección) + media libra de gomitas enchiladas - Q25.00</label>
-    <label><name="orden" value="combo3"> Combo 3:3 Libras de gomitas enchiladas + 2 libras de aros de sandia - Q40.00</label>
-    
+    <label>Combo 1: 2 Libras de mix gomitas + 1 Libra de gomitas enchiladas - Q30.00</label>
+    <label>Combo 2: 1 Libra de gomitas (a su elección) + media libra de gomitas enchiladas - Q25.00</label>
+    <label>Combo 3: 3 Libras de gomitas enchiladas + 2 libras de aros de sandía - Q40.00</label>
+
     <h2>Extras</h2>
-    <label><name="orden" value="papas">  1litro Chamoy - Q20.00</label>
-    <label><name="orden" value="ensalada">1libra Tajin- Q15.00</label>
-    
+    <label>1 litro Chamoy - Q20.00</label>
+    <label>1 libra Tajín - Q15.00</label>
 
   </form>
 
+  <br>
   <a href="index.html">Regresar a la Página Principal</a>
 
 </body>
 </html>
-
